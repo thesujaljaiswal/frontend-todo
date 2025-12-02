@@ -278,7 +278,7 @@ export default function Dashboard() {
                           const t = prompt("Edit title", task.title);
                           if (t != null) updateTask(task._id, { title: t });
                         }}
-                        className="flex-1 py-3 px-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-semibold rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 transform active:scale-95 text-sm flex items-center justify-center gap-2 group-hover:ring-2 group-hover:ring-yellow-200"
+                        className="flex-1 py-3 px-4 bg-gradient-to-r from-stone-400 to-stone-500 text-white-900 font-semibold rounded-xl hover:from-stone-500 hover:to-stone-600 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 transform active:scale-95 text-sm flex items-center justify-center gap-2"
                       >
                         <svg
                           className="w-4 h-4"
@@ -301,7 +301,7 @@ export default function Dashboard() {
                           if (confirm("Delete this task?"))
                             deleteTask(task._id);
                         }}
-                        className="flex-1 py-3 px-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 transform active:scale-95 text-sm flex items-center justify-center gap-2 group-hover:ring-2 group-hover:ring-red-200"
+                        className="flex-1 py-3 px-4 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold rounded-xl hover:from-gray-600 hover:to-gray-700 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 transform active:scale-95 text-sm flex items-center justify-center gap-2"
                       >
                         <svg
                           className="w-4 h-4"
